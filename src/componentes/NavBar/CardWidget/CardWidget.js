@@ -1,3 +1,4 @@
+import React from 'react';
 import cart from './imagenes/file.jpg'
 
 const CartWidget = () => {

@@ -1,5 +1,7 @@
-import './App.css';
+import React from 'react';
+import 'bulma/css/bulma.css';
 import NavBar from './componentes/NavBar/NavBar';
+
 
 
 function App() {
