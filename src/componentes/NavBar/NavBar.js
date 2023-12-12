@@ -1,17 +1,42 @@
-import CartWidget from "./CardWidget/CardWidget"
+import React from 'react';
+import CartWidget from "../CardWidget/CardWidget";
+import 'bulma/css/bulma.css';
+import logo from '../CardWidget/imagenes/file.jpg';
 
-const NavBar = () => { 
+
+
+const Navbar = () => {
     return (
-        <nav>
-            <h3>Ecommerce</h3>
-            <div>
-                <button>Tortas</button>
-                <button>Postre</button>
-                <button>Mesa Dulce</button>
+        <nav className="navbar is-danger" role="navigation" aria-label="main navigation">
+            <div className="navbar-brand">
+                <a className="navbar-item " href="#">
+                    <span className="icon is-large">
+                    <img src={logo} alt="cart-widget" />
+                    </span>
+                    
+                </a>
             </div>
-            <CartWidget />
-        </nav>
-    )
-}
 
-export default NavBar
+            <div className="navbar-menu">
+                <div className="navbar-start">
+                    <a className="navbar-item" href="#">
+                        Tortas
+                    </a>
+                    <a className="navbar-item" href="#">
+                        Postre
+                    </a>
+                    <a className="navbar-item" href="#">
+                        Mesa Dulce
+                    </a>
+
+                </div>
+                <CartWidget />
+
+            </div>
+           
+
+        </nav>
+    );
+};
+
+export default Navbar;
