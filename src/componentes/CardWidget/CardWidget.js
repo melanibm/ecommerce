@@ -1,13 +1,14 @@
 import React from 'react';
 import cart from './imagenes/cart-outline.svg';
+import '../CardWidget/card-widget.css'
 
-const CartWidget = () => {
+const CartWidget = ({ itemCount }) => {
     return (
-        <div>
-            <img src={cart} alt="cart-widget"/> 0
-            
-        </div> 
-    )
-}
-
-export default CartWidget
+      <div className="cart-widget">
+        <img src={cart} alt="cart-widget" />
+        <span className="item-count">{itemCount}</span>
+      </div>
+    );
+  };
+  
+  export default CartWidget;

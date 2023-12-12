@@ -1,0 +1,13 @@
+
+
+.cart-widget {
+    display: flex;
+    width: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .item-count {
+    margin-left: 1rem;
+    font-weight: bold; 
+  }
+  
