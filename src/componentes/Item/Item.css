@@ -1,4 +1,9 @@
+.ContenedorItem {
+ display: inline-block;
+ justify-content: center;
+ margin-left: 6rem;
 
+}
 .CardItem {
     border: 1px solid #ddd; 
     margin: 10px; 
@@ -6,7 +11,8 @@
     width: 20rem;
     background-color: #f9f9f9; 
     border-radius: 8px; 
-    display: inline-block;
+    align-self: center;
+    text-align: center;
     
   }
   
