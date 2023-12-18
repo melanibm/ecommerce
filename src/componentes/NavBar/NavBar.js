@@ -1,7 +1,9 @@
 import React from 'react';
+import '../NavBar/NavBar.css';
 import CartWidget from "../CardWidget/CardWidget";
 import 'bulma/css/bulma.css';
 import logo from '../CardWidget/imagenes/file.jpg';
+
 
 
 
@@ -11,14 +13,14 @@ const Navbar = () => {
             <header className="navbar-brand">
                 <a className="navbar-item " href=".">
                     <span className="icon is-large">
-                    <img src={logo} alt="cart-widget" />
+                    <img className= "Logo" src={logo} alt="cart-widget" />
                     </span>
                     
                 </a>
             </header>
 
             <div className="navbar-menu">
-                <div className="navbar-start">
+                <div className="navbarList navbar-start">
                     <a className="navbar-item has-shadow" href="tortas">
                         Tortas
                     </a>
@@ -28,14 +30,11 @@ const Navbar = () => {
                     <a className="navbar-item" href="mesa-dulce">
                         Mesa Dulce
                     </a>
-
+                     
                 </div>
-                <CartWidget itemCount={5} />
-
+                <CartWidget itemCount={0} />
             </div>
-            
            
-
         </nav>
     );
 };

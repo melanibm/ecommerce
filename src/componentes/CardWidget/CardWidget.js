@@ -1,6 +1,6 @@
 import React from 'react';
 import cart from './imagenes/cart-outline.svg';
-import '../CardWidget/card-widget.css'
+import '../CardWidget/card-widget.css';
 
 const CartWidget = ({ itemCount }) => {
     return (

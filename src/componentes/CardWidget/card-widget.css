@@ -1,13 +1,15 @@
 
-
 .cart-widget {
-    display: flex;
-    width: 2rem;
+    width: 4rem;
+    padding: 0.8rem;
     margin-right: 1rem;
-  }
+    display: flex;
+    border-radius: 1rem;
+    background-color: rgb(202, 67, 67);
+    align-items: center;
   
-  .item-count {
-    margin-left: 1rem;
-    font-weight: bold; 
   }
+
+  
+  
   
