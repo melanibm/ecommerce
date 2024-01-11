@@ -11,21 +11,21 @@ const Navbar = () => {
     return (
         <nav className="navbar is-danger" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-                <NavLink to='/' className="navbar-item">
+                <NavLink to='/' className="navbar-item"></NavLink>
                     <span className="icon is-large">
                         <img className="Logo" src={logo} alt="cart-widget" />
                     </span>
-                </NavLink>
+                
             </div>
 
             <div className="navbar-menu">
                 <div className="navbarList navbar-start">
-                    <NavLink to='/category/tortas' className='navbar-item has-shadow' activeClassName='ActiveOption'>
+                    <NavLink to='/category/tortas' className='navbar-item has-shadow' ></NavLink>
                         Tortas
-                    </NavLink>
-                    <NavLink to='/category/postres' className="navbar-item" activeClassName='ActiveOption'>
+                    
+                    <NavLink to='/category/postres' className="navbar-item" ></NavLink>
                         Postres
-                    </NavLink>
+                    
                 </div>
                 <CartWidget itemCount={0} />
             </div>
