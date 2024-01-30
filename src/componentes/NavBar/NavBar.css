@@ -1,9 +1,31 @@
-.Logo {
+.logo {
     width: 100%;
-}
-
-.navbarList {
-    color: aqua;
 
 }
+
+/* .navbar-menu {
+    display: flex;
+    align-content: space-between;
     
+    
+
+}
+
+     */
+/* styles.css */
+
+.navbar {
+    background: #f00;
+    padding: 10px;
+  }
+  
+  .Option, .ActiveOption {
+    align-content: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .name {
+    color: #fff;
+  }
+  

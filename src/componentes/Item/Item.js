@@ -19,7 +19,7 @@ const Item = ({ id, name, img, price, stock }) => {
             Stock disponible: {stock}</p>
         </section>
         <footer className="ItemFooter">
-          <NavLink to={`/item/${id}`} className='Option'>Ver detalle</NavLink>
+          <NavLink to={`/item/${id}`} className='Opcion'>Ver detalle</NavLink>
         </footer>
       </article>
     </div>
