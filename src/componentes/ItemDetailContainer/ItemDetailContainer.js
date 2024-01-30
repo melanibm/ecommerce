@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './ItemDetailContainer.css';
-import { getProductById } from '../../asyncMocks';
-import ItemDetail from '../ItemDetail/ItemDetail';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'
+import './ItemDetailContainer.css'
+import { getProductById } from '../../asyncMocks'
+import ItemDetail from '../ItemDetail/ItemDetail'
+import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
    const [product, setProduct] = useState(null)

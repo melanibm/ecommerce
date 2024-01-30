@@ -1,6 +1,6 @@
 import React from "react";
 import "../Item/Item.css";
-import { link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Item = ({ id, name, img, price, stock }) => {
   return (
@@ -19,7 +19,7 @@ const Item = ({ id, name, img, price, stock }) => {
             Stock disponible: {stock}</p>
         </section>
         <footer className="ItemFooter">
-          <link to={`/item/${id}`} className='Option'>Ver detalle</link>
+          <NavLink to={`/item/${id}`} className='Option'>Ver detalle</NavLink>
         </footer>
       </article>
     </div>
