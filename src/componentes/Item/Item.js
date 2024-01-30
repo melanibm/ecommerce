@@ -1,5 +1,6 @@
 import React from "react";
 import "../Item/Item.css";
+import { link } from 'react-router-dom';
 
 const Item = ({ id, name, img, price, stock }) => {
   return (
@@ -12,11 +13,13 @@ const Item = ({ id, name, img, price, stock }) => {
           <img src={img} alt={name} className="ItemImg" />
         </picture>
         <section>
-          <p className="Info">Precio: ${price}</p>
-          <p className="Info">Stock disponible: {stock}</p>
+          <p className="Info">
+            Precio: ${price}</p>
+          <p className="Info">
+            Stock disponible: {stock}</p>
         </section>
         <footer className="ItemFooter">
-          <link to={'/item/${id}'} className='Option'>Ver detalle</link>
+          <link to={`/item/${id}`} className='Option'>Ver detalle</link>
         </footer>
       </article>
     </div>
@@ -24,3 +27,4 @@ const Item = ({ id, name, img, price, stock }) => {
 };
 
 export default Item;
+
