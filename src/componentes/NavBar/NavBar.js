@@ -10,7 +10,7 @@ import { NavLink, Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav className="navbar is-danger" role="navigation" aria-label="main navigation" style={{ background: '#f00', padding: '10px' }}>
+        <nav className="navbar" role="navigation" aria-label="main navigation" >
             <div className="navbar-brand">
                 <NavLink to='/' className="navbar-item">
                     <span className="icon is-large">
@@ -19,15 +19,15 @@ const Navbar = () => {
                 </NavLink>
             </div>
 
-            <div className="navbar-menu" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div className="navbar-start">
+            <div className="navbar-menu" >
+                <div className="navbar-">
                     <NavLink to={'/category/tortas'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Tortas</NavLink>
                     <NavLink to={'/category/postres'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Postres</NavLink>
                 </div>
 
-                <div className="navbar-end" style={{ display: 'flex', alignItems: 'center' }}>
+                <div className="navbar-end">
                     <Link to='/' style={{ textDecoration: 'none' }}>
-                        <h3 className='name' style={{ color: '#fff' }}>Paulette Cocina</h3>
+                        <h3 className="name"> Paulette Cocina</h3>
                     </Link>
                     <CartWidget itemCount={0} />
                 </div>
