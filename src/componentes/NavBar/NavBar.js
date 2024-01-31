@@ -21,8 +21,8 @@ const Navbar = () => {
 
             <div className="navbar-menu" >
                 <div className="navbar-">
-                    <NavLink to={'/category/tortas'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Tortas</NavLink>
-                    <NavLink to={'/category/postres'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Postres</NavLink>
+                    <NavLink to={'/category/tortas'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Tortas_ </NavLink>
+                    <NavLink to={'/category/tartas'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>_Tartas </NavLink>
                 </div>
 
                 <div className="navbar-end">

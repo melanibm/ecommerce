@@ -1,6 +1,7 @@
 import chocotortaImg from "./img/WhatsApp Image 2023-12-13 at 20.51.03.jpeg";
 import cheescakeImg from "./img/WhatsApp Image 2023-12-13 at 20.51.41.jpeg";
 import brownieImg from "./img/WhatsApp Image 2023-12-13 at 20.52.24.jpeg";
+import frutal from "./img/Sin título.jpg";
 
 
 const products = [
@@ -27,10 +28,19 @@ const products = [
     id: 3,
     name: "Brownie",
     price: 1500,
-    category: "tortas",
+    category: "tartas",
     img: brownieImg,
     stock: 10,
     description: "Brownie bomba",
+  },
+  {
+    id: 4,
+    name: "Frutal",
+    price: 1500,
+    category: "tartas",
+    img: frutal,
+    stock: 10,
+    description: "Tarta Frutal",
   },
 ];
 
@@ -44,15 +54,14 @@ export const getProducts = () => {
 
 }
 
+
 export const getProductById = (productId) => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-          resolve(products.find(prod => prod.id === productId))
-      }, 500)
-
-    })
-
-};
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.find(prod => prod.id === productId))
+    }, 500)
+  })
+}
 
 export const getProductByCategory = (category) => {
   return new Promise((resolve) => {
